@@ -5,10 +5,10 @@ var naptime = lunchtime + 2;
 var partytime;
 var evening = 18;
 
-// Getting it to show the current time on the page
+
 var showCurrentTime = function()
 {
-    // display the string on the webpage
+   
     var clock = document.getElementById('clock');
  
     var currentTime = new Date();
@@ -41,13 +41,12 @@ var showCurrentTime = function()
         seconds = "0" + seconds;
     }
  
-    // put together the string that displays the time
     var clockTime = hours + ':' + minutes + ':' + seconds + " " + meridian + "!";
  
     clock.innerText = clockTime;
 };
 
-// Getting the clock to increment on its own and change out messages and pictures
+
 var updateClock = function() 
 {
   var time = new Date().getHours();
@@ -101,12 +100,9 @@ var updateClock = function()
 };
 updateClock();
 
-// Getting the clock to increment once a second
 var oneSecond = 1000;
 setInterval( updateClock, oneSecond);
 
-
-// Getting the Party Time Button To Work
 var partyButton = document.getElementById("partyTimeButton");
 
 var partyEvent = function()
@@ -129,7 +125,6 @@ partyButton.addEventListener("click", partyEvent);
 partyEvent(); 
 
 
-// Activates Wake-Up selector
 var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
 
 var wakeUpEvent = function()
@@ -139,8 +134,6 @@ var wakeUpEvent = function()
 
 wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
 
-
-// Activates Lunch selector
 var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
 
 var lunchEvent = function()
@@ -151,7 +144,6 @@ var lunchEvent = function()
 lunchTimeSelector.addEventListener("change", lunchEvent);
 
 
-// Activates Nap-Time selector
 var napTimeSelector =  document.getElementById("napTimeSelector");
 
 var napEvent = function()
