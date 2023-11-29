@@ -18,7 +18,7 @@ var showCurrentTime = function()
     var seconds = currentTime.getSeconds();
     var meridian = "AM";
  
-    // Set hours
+    // Seting hours
 	  if (hours >= noon)
 	  {
 		  meridian = "PM";
@@ -29,13 +29,13 @@ var showCurrentTime = function()
 		  hours = hours - 12;
 	  }
  
-    // Set Minutes
+    // Setting Minutes
     if (minutes < 10)
     {
         minutes = "0" + minutes;
     }
  
-    // Set Seconds
+    // Setting Seconds
     if (seconds < 10)
     {
         seconds = "0" + seconds;
