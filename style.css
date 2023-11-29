@@ -1,12 +1,12 @@
 body {
-    background-color: #4983aa;
+    background-color: #979090;
   }
   .page {
     width: 80%;
     max-width: 960px;
     margin: 50px auto;
     text-align: center;
-    background-color: hsl(210, 3%, 76%);
+    background-color: hsl(216, 9%, 89%);
     border-radius: 5px;
   }
   body {
